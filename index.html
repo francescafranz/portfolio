@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Francesca Franz Portfolio</title>
+    <script src="https://kit.fontawesome.com/f0028f85ed.js" crossorigin="anonymous"></script> 
 
     <!--------------
       TAG OPEN GRAPH
@@ -22,8 +22,8 @@
       <meta property="og:description" content="Hey! I am Francesca, a UX/UI Designer based in Rome. Find out more about me...">
 
     <link rel="stylesheet" href="assets/css/style.css">
-    
-     <!--------
+
+    <!---------
       FONTS
     ---------->
 
@@ -34,8 +34,63 @@
 
       <!--'Existence' embedded in css-->
 
+    <!--------
+      FAVICON
+    --------->
+      <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <title>Francesca Franz Portfolio</title>
+
   </head>
+
+
   <body>
     
-  </body>
-</html>
+    <!-------
+      HEADER
+    -------->
+      <header>
+        <nav>
+          <a href="#home" class="logo"><img src="assets/img/ffranz.png" alt="ffranz"></a>
+
+          <ul id="sidemenu">
+            <li><a href="#about">about</a></li>
+            <li><a href="#curriculum">curriculum</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </header>
+    
+    <!------
+      HOME
+    ------->
+      <div id="home">
+        <div class="container">
+
+          <div class="home-presentation">
+            
+            <div class="text-home">
+              <h1>Hey!</h1>
+              <p>I’m Francesca, a <em class="my-title">UX/UI Designer</em> based in Rome with a passion in understanding how things work and how to ameliorate people experiences with them.</p>
+            </div>
+            
+            <div class="buttons-home">
+              <button class="my-projects-button" type="button"><a href="#portfolio">MY PROJECTS</a></button>
+              <button class="contact-me-button" type="button"><a href="contact.html">CONTACT ME</a></button>
+            </div>
+            
+          </div>
+          
+          <div class="profile-picture">
+            <img src="assets/img/foto-profilo.png" alt="Profile picture">
+          </div>
+          
+        </div>
+      </div>
+        
+        
+      </body>
+      </html>
