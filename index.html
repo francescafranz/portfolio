@@ -41,10 +41,15 @@
 
     <title>Francesca Franz Portfolio</title>
 
-    <!--forse da inserire
+    <!---
+      JS
+    ---->
     <script type="text/javascript" src="assets/js/script.js"></script>
-    -->
-
+  
+    <!------
+      ICONS
+    ------->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   </head>
 
 
@@ -54,18 +59,23 @@
       HEADER
     -------->
       <header>
-        <nav>
-          <a href="#home" class="logo"><img src="assets/img/ffranz.png" alt="ffranz"></a>
+        <div class="navbar">
+          <nav>
 
-          <ul id="sidemenu">
-            <li><a href="#about">about</a></li>
-            <li><a href="#curriculum">curriculum</a></li>
-            <li><a href="#portfolio">portfolio</a></li>
-            <li><a href="contact.html">contact</a></li>
-            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-          </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
+            <a href="#home" class="logo"><img src="assets/img/ffranz.png" alt="ffranz"></a>
+
+            <ul id="sidemenu">
+              <li><a href="#about">about</a></li>
+              <li><a href="#curriculum">curriculum</a></li>
+              <li><a href="#portfolio">portfolio</a></li>
+              <li><a href="contact.html">contact</a></li>
+              <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+
+              <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+          </nav>
+        </div>
       </header>
     
     <!------
@@ -115,11 +125,11 @@
               </div>
 
               <div class="arrow-hobbies">
-                <div class="graphic-arrow">
-                  <img src="/assets/img/arrow.png" alt="arrow pointing at my hobbies">
-                </div>
                 <div class="text-hobbies">
                   <p>Hover on each doodle to see my hobbies</p>
+                </div>
+                <div class="graphic-arrow">
+                  <img src="/assets/img/arrow.png" alt="arrow pointing at my hobbies">
                 </div>
               </div>
 
@@ -129,113 +139,21 @@
 
               <div class="my-hobbies">
                 <div class="cooking-and-mixology">
-                  <img src="/assets/img/hobby-1-cooking-mixology.png" alt="I love cooking and mixology">
+                  <img src="/assets/img/hobby-1-cooking-mixology.png" alt="I love cooking and mixology" title="I love cooking and mixology">
                 </div>
                 <div class="videogames-books-and-music">
-                  <img src="/assets/img/hobby-2-books-games-music.png" alt="Games, books and music are my go-to to relax after a long day">
+                  <img src="/assets/img/hobby-2-books-games-music.png" alt="Games, books and music are my go-to to relax after a long day" title="Games, books and music are my go-to to relax after a long day">
                 </div>
                 <div class="coffee">
-                  <img src="/assets/img/hobby-3-coffee-passion.png" alt="Coffee keeps me productive all day long">
+                  <img src="/assets/img/hobby-3-coffee-passion.png" alt="Coffee keeps me productive all day long" title="Coffee keeps me productive all day long">
                 </div>
                 <div class="travel">
-                  <img src="/assets/img/hobby-4-travel.png" alt="Travelling boosts my mood and creativity">
+                  <img src="/assets/img/hobby-4-travel.png" alt="Travelling boosts my mood and creativity" title="Travelling boosts my mood and creativity">
                 </div>
                 <div class="watercolors-journaling">
-                  <img src="/assets/img/hobby-5-watercolors-journaling-doodles.png" alt="I find and try new ideas through watercolors, journaling and doodling">
+                  <img src="/assets/img/hobby-5-watercolors-journaling-doodles.png" alt="I find and try new ideas through watercolors, journaling and doodling" title="I find and try new ideas through watercolors, journaling and doodling">
                 </div>
 
-                <!--Da inserire poi nel css
-                    //**\\
-                  .cooking-and-mixology::after {
-                    content: attr(alt);
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    width: 100%;
-                    background-color: #7E45A2;
-                    color: #FCFCFC;
-                    padding: 5px;
-                    opacity: 0;
-                    visibility: hidden;
-                    transition: opacity 0.3s, visibility o.3s;
-                  }
-                  .cooking-and-mixology:hover::after{
-                    opacity: 1;
-                    visibility: visible;
-                  }
-
-                  .videogames-books-and-music::after {
-                    content: attr(alt);
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    width: 100%;
-                    background-color: #7E45A2;
-                    color: #FCFCFC;
-                    padding: 5px;
-                    opacity: 0;
-                    visibility: hidden;
-                    transition: opacity 0.3s, visibility o.3s;
-                  }
-                  .videogames-books-and-music:hover::after{
-                    opacity: 1;
-                    visibility: visible;
-                  }
-
-                  .coffee::after {
-                    content: attr(alt);
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    width: 100%;
-                    background-color: #7E45A2;
-                    color: #FCFCFC;
-                    padding: 5px;
-                    opacity: 0;
-                    visibility: hidden;
-                    transition: opacity 0.3s, visibility o.3s;
-                  }
-                  .coffee:hover::after{
-                    opacity: 1;
-                    visibility: visible;
-                  }
-
-                  .travel::after {
-                    content: attr(alt);
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    width: 100%;
-                    background-color: #7E45A2;
-                    color: #FCFCFC;
-                    padding: 5px;
-                    opacity: 0;
-                    visibility: hidden;
-                    transition: opacity 0.3s, visibility o.3s;
-                  }
-                  .travel:hover::after{
-                    opacity: 1;
-                    visibility: visible;
-                  }
-
-                  .watercolors-journaling::after {
-                    content: attr(alt);
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    width: 100%;
-                    background-color: #7E45A2;
-                    color: #FCFCFC;
-                    padding: 5px;
-                    opacity: 0;
-                    visibility: hidden;
-                    transition: opacity 0.3s, visibility o.3s;
-                  }
-                  .watercolors-journaling:hover::after{
-                    opacity: 1;
-                    visibility: visible;
-                  }
-                -->
               </div>
 
             </div>
