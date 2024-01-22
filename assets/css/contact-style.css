@@ -1,0 +1,214 @@
+@font-face {
+  font-family: "Existence Unicase Light";
+  src: url(/assets/existence-font/existence_unicaselight_macroman/Existence-UnicaseLight-webfont.woff);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
+/*Variabili CSS per valori di colore e dimensioni*/
+:root {
+  --light-background-color: #FCFCFC;
+  --second-background-color: #F4F0F6;
+  --text-color: #1D1D1B;
+  --primary-color: #7E45A2;
+  --secondary-color: #C4ACD4;
+  --h1-size: 64px;
+  --h2-size: 32px;
+  --p-size: 24px;
+}
+
+/*TESTO*/
+body {
+  background-color: var(--light-background-color);
+  color: #1D1D1B;
+  font-size: var(--p-size);
+  font-weight: lighter;
+}
+
+h1 {
+  color: var(--primary-color);
+  font-size: var(--h1-size);
+  font-weight: 600;
+}
+
+h2 {
+  color: var(--primary-color);
+  font-size: var(--h2-size);
+  font-weight: 500;
+}
+
+/*SCROLLBAR*/
+html::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+html::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0px var(--light-background-color);
+  border-radius: 16px;
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 16px;
+}
+
+/*HEADER*/
+#header {
+  position: fixed;
+  height: 182px;
+  width: 100%;
+  background-color: var(--light-background-color);
+  z-index: 100;
+}
+
+.navbar {
+  padding: 20px 4%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo img {
+  height: 48px;
+
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  font-family: "Existence Unicase Light", sans-serif;
+  font-size: var(--h2-size);
+  color: var(--text-color);
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  height: 8px;
+  width: 0;
+  background-color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  transition: 0,5s;
+  border-radius: 8px;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav .fa-solid {
+  display: none;
+}
+
+#contact {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  background-color: var(--light-background-color);
+  padding: 60px 4%;
+  width: 100%;
+}
+
+
+
+/*FORM*/
+
+h1 {
+  margin-bottom: 24px;
+}
+
+p {
+  margin-bottom: 48px;
+}
+
+form {
+  width: 400px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  margin-top: 16px;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--text-color);
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+input[type="submit"] {
+  background-color: var(--primary-color);
+  color: var(--light-background-color);
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 400;
+  border: solid;
+  border-color: var(--primary-color);
+  border-width: 2px;
+  border-radius: 8px;
+  padding: 16px 24px;
+  margin-top: 24px;
+  margin-bottom: 48px;
+  transition: all .30s;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  transform: scale(1.08);
+}
+
+#message {
+  height: 160px;
+}
+
+/*SOCIAL ICONS*/
+
+.social-icons a {
+  cursor: pointer;
+  transition: ease 0.4s;
+
+}
+
+.social-icons img {
+  margin-bottom: 20px;
+  margin-top: 32px;
+  margin-right: 48px;
+  width: 48px;
+}  
+
+.social-icons a:hover img {
+  transform: translateY(-4px);
+} 
+
+/*FOOTER*/
+footer {
+  padding: 80px 4%;
+  background-color: var(--secondary-color);
+}
+
+footer img {
+  height: 72px;
+}
