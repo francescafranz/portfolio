@@ -58,10 +58,11 @@ html::-webkit-scrollbar-thumb {
 }
 
 /*HEADER*/
-#header {
+header {
   position: fixed;
-  height: 182px;
+  height: 100px;
   width: 100%;
+  top: 0;
   background-color: var(--light-background-color);
   z-index: 100;
 }
@@ -123,9 +124,13 @@ nav .fa-solid {
   padding-top: 4%;
   padding-bottom: 4%;
   background-color: var(--light-background-color);
+}
+
+.container {
   padding: 60px 4%;
   width: 100%;
 }
+
 
 
 
