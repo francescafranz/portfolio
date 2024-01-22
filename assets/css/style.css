@@ -123,10 +123,11 @@ nav .fa-solid {
 #home {
   padding-top: 4%;
   padding-bottom: 4%;
+  background-color: var(--light-background-color);
 }
 
 .container {
-  padding: 60px 4%;
+  padding: 60px 0;
   width: 100%;
 }
 
@@ -174,7 +175,7 @@ button:hover {
 button.primary {
   background-color: var(--primary-color);
   color: var(--light-background-color);
-  margin-right: 32px;
+  margin-right: 64px;
 }
 
 button.primary a{
@@ -186,7 +187,6 @@ button.primary a{
 button.secondary {
   background-color: var(--light-background-color);
   color: var(--primary-color);
-  margin-left: 32px;
 }
 
 button.secondary a {
@@ -196,9 +196,16 @@ button.secondary a {
 }
 
 /*ABOUT*/
+
 #about {
-  padding: 10%;
+  padding-top: 4%;
+  padding-bottom: 4%;
   background-color: var(--second-background-color);
+}
+
+.container {
+  padding: 100px 4%;
+  width: 100%;
 }
 
 #about .row {
@@ -215,16 +222,16 @@ button.secondary a {
 
 .arrow-hobbies {
   display: flex;
-  align-items: flex-end;
   justify-content: space-between;
 }
 
 .text-hobbies {
   font-size: 18px;
   font-weight: 400;
-  margin-left: auto;
-  margin-right: 0;
+  margin-left: 0;
   color: var(--primary-color);
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .graphic-arrow img{
@@ -248,14 +255,270 @@ button.secondary a {
 }
 
 .coffee img {
-  width: 116px;
+  width: 60%;
+}
+
+/*overlay over hobbies img*/
+
+.cooking-and-mixology {
+  position:relative;
+}
+
+.overlay-hobby-1 {
+  display: none;
+}
+
+.cooking-and-mixology:hover .overlay-hobby-1 {
+  position: absolute;
+  display: block;
+  background-color: var(--primary-color);
+  color: var(--light-background-color);
+  width: fit-content;
+  font-size: 16px;
+  border: solid;
+  border-color: var(--primary-color);
+  border-width: 8px;
+  border-radius: 8px;
+  transition: 0.30s;
+  margin-top: -120px;
+}
+
+.videogames-books-and-music {
+  position:relative;
+}
+
+.overlay-hobby-2 {
+  display: none;
+}
+
+.videogames-books-and-music:hover .overlay-hobby-2 {
+  position: absolute;
+  display: block;
+  background-color: var(--primary-color);
+  color: var(--light-background-color);
+  width: fit-content;
+  font-size: 16px;
+  border: solid;
+  border-color: var(--primary-color);
+  border-width: 8px;
+  border-radius: 8px;
+  transition: 0.30s;
+  margin-top: -80px;
+}
+
+.coffee {
+  position:relative;
+}
+
+.overlay-hobby-3 {
+  display: none;
+}
+
+.coffee:hover .overlay-hobby-3 {
+  position: absolute;
+  display: block;
+  background-color: var(--primary-color);
+  color: var(--light-background-color);
+  width: fit-content;
+  font-size: 16px;
+  border: solid;
+  border-color: var(--primary-color);
+  border-width: 8px;
+  border-radius: 8px;
+  transition: 0.30s;
+  margin-top: -100px;
+}
+
+.travel {
+  position:relative;
+}
+
+.overlay-hobby-4 {
+  display: none;
+}
+
+.travel:hover .overlay-hobby-4 {
+  position: absolute;
+  display: block;
+  background-color: var(--primary-color);
+  color: var(--light-background-color);
+  width: fit-content;
+  font-size: 16px;
+  border: solid;
+  border-color: var(--primary-color);
+  border-width: 8px;
+  border-radius: 8px;
+  transition: 0.30s;
+  margin-top: -120px;
+}
+
+.watercolors-journaling {
+  position:relative;
+}
+
+.overlay-hobby-5 {
+  display: none;
+}
+
+.watercolors-journaling:hover .overlay-hobby-5 {
+  position: absolute;
+  display: block;
+  background-color: var(--primary-color);
+  color: var(--light-background-color);
+  width: 240px;
+  font-size: 16px;
+  border: solid;
+  border-color: var(--primary-color);
+  border-width: 8px;
+  border-radius: 8px;
+  transition: 0.30s;
+  margin-top: -100px;
+}
+
+/*CURRICULUM*/
+#curriculum {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  background-color: var(--light-background-color);
+  align-items: top;
 }
 
 
+#curriculum .row {
+  align-items: top;
+}
 
+
+.tools-container {
+  column-count: 2;
+  align-items: top;
+  justify-content: space-around;
+}
+
+.tools-container .icon img {
+  width: 88px;
+  break-inside: avoid-column;
+  column-gap: 8px;
+  margin: 8px 0;
+}
+
+.curriculum-col-1 {
+  flex-basis: 30%;
+}
+
+.curriculum-col-2 {
+  flex-basis: 60%;
+}
+
+#curriculum h2 {
+  margin-bottom: 24px;
+  margin-top: 48px;
+}
+
+.tools-container h2 {
+  margin-top: 0px;
+}
+.curriculum-col-2 ul li {
+  list-style: none;
+  margin: 16px 0;
+}
+.curriculum-col-2 span {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.cv-pdf button {
+  margin-top: 24px;
+}
+
+/*PORTFOLIO*/
+
+#portfolio {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  background-color: var(--second-background-color);
+}
+
+.portfolio-initial-text h1 {
+  margin-bottom: 32px;
+}
+
+.portfolio-projects {
+  margin-top: 72px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+  grid-gap: 160px;
+}
+
+.box {
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.box:hover img {
+  transform: scale(1.1);
+  transition: all 0.30s;
+}
+
+.box h2 {
+  margin-bottom: 8px;
+}
+
+/*CONTATTI*/
+#contacts {
+  background-color: var(--light-background-color);
+  margin: 120px 0;
+}
+
+.contacts-text {
+  width: 70%;
+}
+
+.contacts-text h1 {
+  margin-bottom: 24px;
+}
+
+.contacts-text p {
+  margin-bottom: 64px;
+}
+
+.social-icons a {
+  cursor: pointer;
+  transition: ease 0.4s;
+
+}
+
+.social-icons img {
+  margin-bottom: 20px;
+  margin-top: 32px;
+  margin-right: 48px;
+  width: 48px;
+}  
+
+.social-icons a:hover img {
+  transform: translateY(-4px);
+} 
 
 /*FOOTER*/
+footer {
+  padding: 80px 4%;
+  background-color: var(--secondary-color);
+}
 
+footer img {
+  height: 72px;
+}
+
+#message {
+  height: 160px;
+}
 
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 768px){
@@ -310,4 +573,41 @@ button.secondary a {
     cursor: pointer;
   }
 
+  .container {
+    width: 100%;
+    padding: 40px 10%;
+  }
+
+  #home {
+    padding: 20% 0;
+  }
+
+  .text-home {
+    width: 100%;
+    padding-top: 30%;
+  }
+
+  h1 {
+    font-size: 48px;
+    font-weight: 600;
+  }
+
+  p, li {
+    font-size: 18px;
+  }
+
+  .about-me-col-1, .about-me-col-2 {
+    flex-basis: 100%;
+  }
+
+  .about-me-col-1 p, .home-presentation-col-1 p {
+    width: 80%;
+  }
+
+  .coffee {
+    width: 75%;
+  }
+  button {
+    font-size: 14px;
+  }
 }

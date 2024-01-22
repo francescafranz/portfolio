@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f0028f85ed.js" crossorigin="anonymous"></script> 
+
+    <!--------------
+      TAG OPEN GRAPH
+    --------------->
+      <meta property="og:title" content="Francesca Franz Portfolio">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://francescafranz.github.io/portfolio/"> <!--da controllare-->
+      <meta property="og:image" content="assets/img/cover-social.png">
+      <meta property="og:image:alt" content="Francesca Franz portfolio website preview">
+      <meta property="og:image:width" content="1200">
+      <meta property="og:image:height" content="630">
+      <meta property="og:description" content="Hey! I am Francesca, a UX/UI Designer based in Rome. Find out more about me...">
+
+    <link rel="stylesheet" href="assets/css/contact-style.css">
+
+    <!---------
+      FONTS
+    ---------->
+
+      <!--Montserrat-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+      <!--'Existence' embedded in css-->
+
+    <!--------
+      FAVICON
+    --------->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <title>Francesca Franz Contact Me</title>
+
+    <!---
+      JS
+    ---->
+    <script type="text/javascript" src="assets/js/script.js"></script>
+  
+    <!------
+      ICONS
+    ------->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <!--------
+      EMAILJS
+    --------->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('fhSJAynnLUrcYDvVi');
+        })();
+    </script>
+    
+    </script>
+  </head>
+
+  <body>
+
+    <!-------
+      HEADER
+    -------->
+    <header>
+      <div class="navbar">
+        <nav>
+
+          <a href="#home" class="logo"><img src="assets/img/ffranz.png" alt="ffranz"></a>
+
+          <ul id="sidemenu">
+            <li><a href="index.html">back to main page</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+        </nav>
+      </div>
+    </header>
+
+    <!-----
+      FORM
+    ------>
+    <div id="contact">
+      <div class="container">
+        <div class="contact-form">
+          <div class="contact-form-text">
+            <h1>Contact me</h1>
+            <p>If you are interested in my profile, have any question or just want to exchange ideas, feel free to contact me through this form! <br>
+            I will answer you as soon as possible.</p>
+          </div>
+
+          <form id="contact-form" onsubmit="{sendEmail}">
+        
+              <input type="hidden" name="contact_number">
+              <label>Name</label>
+              <input type="text" name="user_name" placeholder="Your name"><br>
+              <label>Email</label>
+              <input type="email" name="user_email" placeholder="Your email" required><br>
+              <label>Message</label>
+              <textarea id="message" name="message" placeholder="Write here your message" required></textarea><br>
+              <input type="submit" value="SEND MESSAGE">
+            
+          </form> 
+
+        </div>
+      </div>
+
+      <!-------
+        SOCIAL
+      -------->
+      <div class="social-icons">
+
+        <a href="https://www.linkedin.com/in/francescafranz/" rel="noopener" target="_blank"><img src="/assets/img/contacts-linkedin.png" alt="linkedin icon" class="social linkedin"></a>
+
+        <a href="https://www.behance.net/francescafranz/projects" rel="noopener" target="_blank"><img src="assets/img/contact-behance.png" alt="behance icon" class="social behance"></a>
+
+        <a href="https://github.com/francescafranz" rel="noopener" target="_blank"><img src="assets/img/contact-github.png" alt="github icon" class="social github"></a>
+
+        <a href="contact.html"><img src="assets/img/contact-formlink.png" alt="send me a message, icon" class="social contact"></a>
+
+      </div>
+
+      <!-------
+        FOOTER  
+      -------->
+      <footer>
+        <img src="assets/img/UX-UI-designer.png" alt="francesca franz, UX/UI Designer">
+      </footer>
+    </div>
+  </body>

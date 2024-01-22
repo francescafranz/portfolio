@@ -14,3 +14,25 @@ if (document.documentElement.clientWidth < 768) {
   function closemenu(){
     document.getElementById("sidemenu").style.right = "-240px";
   }
+
+//form
+const sendEmail = (e) => {
+  e.preventDefault()
+
+  emailjs
+  .sendForm(
+    'service_j3dpcan',
+    'template_j8uxwz4',
+    refForm.current,
+    'fhSJAynnLUrcYDvVi'
+  )
+  .then (
+    () => {
+      alert('Your Message has been sent')
+      window.location.reload(false)
+    },
+    () => {
+      alert('Failed to send message, please try again')
+    }
+  )
+}
