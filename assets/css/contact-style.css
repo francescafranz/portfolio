@@ -197,6 +197,14 @@ input[type="submit"]:hover {
 
 }
 
+.social-icons {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  background-color: var(--light-background-color);
+  padding: 60px 4%;
+  width: 100%;
+}
+
 .social-icons img {
   margin-bottom: 20px;
   margin-top: 32px;
