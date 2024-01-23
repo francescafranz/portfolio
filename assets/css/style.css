@@ -508,7 +508,7 @@ button.secondary a {
   padding-top: 4%;
   padding-bottom: 4%;
   background-color: var(--light-background-color);
-  padding: 60px 4%;
+  padding: 60px 0;
   width: 100%;
 }
 
@@ -720,7 +720,7 @@ footer img {
     width: 48px;
     margin-top: 0;
     margin-bottom: 8px;
-    margin-right: 16px;
+    margin-right: 24px;
   }
 
   footer {
