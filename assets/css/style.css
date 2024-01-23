@@ -706,6 +706,13 @@ footer img {
    width: 100%;
   }
 
+  .social-icons img{
+    width: 32px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    margin-right: 8px;
+  }
+
   footer {
     padding: 72px 4%;
     background-color: var(--secondary-color);
