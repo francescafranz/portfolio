@@ -621,6 +621,10 @@ footer img {
     flex-basis: 100%;
   }
 
+  .profile-picture-col-2 img {
+    margin-top: 48px;
+  }
+
   .about-me-col-1, .about-me-col-2 {
     flex-basis: 100%;
   }
