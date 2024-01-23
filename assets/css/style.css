@@ -155,6 +155,12 @@ nav .fa-solid {
   margin-bottom: 32px;
 }
 
+.my-title {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-style: normal;
+}
+
 button {
   width: fit-content;
   font-size: 16px;
