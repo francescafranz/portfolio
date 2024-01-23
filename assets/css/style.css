@@ -620,7 +620,7 @@ footer img {
   }
 
   .about-me-col-1 p, .home-presentation-col-1 p {
-    width: 80%;
+    width: 100%;
   }
 
   button {
@@ -647,8 +647,17 @@ footer img {
 
 
   .curriculum-col-2 {
-    width: 80%;
+    width: 100%;
     font-size: 18px;
+  }
+
+  .curriculum-col-1, .curriculum-col-2 {
+    flex-basis: 100%;
+  }
+
+  .skills-1, .education-2 {
+    width: 100%;
+    align-items: center;
   }
 
   .cv-pdf button {
@@ -689,11 +698,12 @@ footer img {
     margin-bottom: 8px;
   }
 
-  .social-icons img{
-    width: 32px;
-    margin-top: 0;
-    margin-bottom: 8px;
-    margin-right: 8px;
+  .contacts-text {
+    width: 100%;
+  }
+
+  .social-icons {
+   width: 100%;
   }
 
   footer {
