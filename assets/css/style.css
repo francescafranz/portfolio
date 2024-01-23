@@ -496,6 +496,8 @@ button.secondary a {
   margin-bottom: 64px;
 }
 
+/*SOCIAL ICONS*/
+
 .social-icons a {
   cursor: pointer;
   transition: ease 0.4s;
@@ -520,13 +522,6 @@ button.secondary a {
 .social-icons a:hover img {
   transform: translateY(-4px);
 } 
-
-
-.social-icons a, .social-icons img {
-  width: 48px;
-  grid-gap: 20px;
-  margin-top: 24px;
-}
 
 /*FOOTER*/
 footer {
@@ -714,11 +709,11 @@ footer img {
   }
 
   .social-icons {
-   width: 100%;
-  }
+    width: 100%;
+   }
 
   .social-icons img{
-    width: 32px;
+    width: 48px;
     margin-top: 0;
     margin-bottom: 8px;
     margin-right: 8px;
