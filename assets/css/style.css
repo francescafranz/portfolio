@@ -465,7 +465,7 @@ button.secondary a {
 .box img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 24px;
   margin-bottom: 16px;
 }
 
@@ -702,9 +702,9 @@ footer img {
   }
   
   .box img {
-    width: 80%;
+    width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 24px;
     margin-bottom: 8px;
   }
 
