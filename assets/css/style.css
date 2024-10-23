@@ -26,21 +26,24 @@
 /*TESTO*/
 body {
   background-color: var(--light-background-color);
-  color: #1D1D1B;
+  color: #31312f;
   font-size: var(--p-size);
-  font-weight: lighter;
+  line-height: 150%;
+  font-weight: 300;
 }
 
 h1 {
   color: var(--primary-color);
   font-size: var(--h1-size);
   font-weight: 600;
+  line-height: 150%;
 }
 
 h2 {
   color: var(--primary-color);
   font-size: var(--h2-size);
   font-weight: 500;
+  line-height: 150%;
 }
 
 /*SCROLLBAR*/
@@ -223,7 +226,7 @@ button.secondary a {
   flex-basis: 50%;
 }
 
-.about-me-col-1 h1 {
+.about-me-col-1 h2 {
   margin-bottom: 32px;
 }
 
@@ -281,7 +284,7 @@ button.secondary a {
   background-color: var(--primary-color);
   color: var(--light-background-color);
   width: fit-content;
-  font-size: 16px;
+  font-size: 14px;
   border: solid;
   border-color: var(--primary-color);
   border-width: 8px;
@@ -304,7 +307,7 @@ button.secondary a {
   background-color: var(--primary-color);
   color: var(--light-background-color);
   width: fit-content;
-  font-size: 16px;
+  font-size: 14px;
   border: solid;
   border-color: var(--primary-color);
   border-width: 8px;
@@ -327,7 +330,7 @@ button.secondary a {
   background-color: var(--primary-color);
   color: var(--light-background-color);
   width: fit-content;
-  font-size: 16px;
+  font-size: 14px;
   border: solid;
   border-color: var(--primary-color);
   border-width: 8px;
@@ -350,7 +353,7 @@ button.secondary a {
   background-color: var(--primary-color);
   color: var(--light-background-color);
   width: fit-content;
-  font-size: 16px;
+  font-size: 14px;
   border: solid;
   border-color: var(--primary-color);
   border-width: 8px;
@@ -373,7 +376,7 @@ button.secondary a {
   background-color: var(--primary-color);
   color: var(--light-background-color);
   width: 240px;
-  font-size: 16px;
+  font-size: 14px;
   border: solid;
   border-color: var(--primary-color);
   border-width: 8px;
@@ -446,36 +449,49 @@ button.secondary a {
   background-color: var(--second-background-color);
 }
 
-.portfolio-initial-text h1 {
-  margin-bottom: 32px;
+.portfolio-initial-text h2 {
+  margin-bottom: 48px;
 }
 
+
 .portfolio-projects {
-  margin-top: 72px;
+  margin-top: 56px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
-  grid-gap: 160px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  grid-gap: 120px;
 }
 
 .box {
   margin-bottom: 16px;
+  border-style: solid;
+  border-radius: 24px;
+  border-color: var(--secondary-color);
+  border-width: 2px;
 }
 
 .box img {
   width: 100%;
   height: auto;
-  border-radius: 24px;
   margin-bottom: 16px;
   cursor: pointer;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
 }
 
-.box:hover img {
+.box:hover {
   transform: scale(1.1);
   transition: all 0.30s;
 }
 
 .box h2 {
   margin-bottom: 8px;
+  font-size: 20px;
+  margin-left: 16px;
+}
+.box p {
+  font-size: 18px;
+  margin-left: 16px;
+  margin-bottom: 24px;
 }
 
 /*CONTATTI*/
@@ -525,12 +541,13 @@ button.secondary a {
 
 /*FOOTER*/
 footer {
-  padding: 80px 4%;
+  padding: 24px 4%;
+  padding-top: 32px;
   background-color: var(--secondary-color);
 }
 
 footer img {
-  width: 20%;
+  width: 10%;
 }
 
 #message {
@@ -615,6 +632,7 @@ footer img {
 
   p, li {
     font-size: 16px;
+    padding-bottom: 24px;
   }
 
   .home-presentation-col-1, .profile-picture-col-2 {
@@ -635,13 +653,12 @@ footer img {
 
   button {
     width: 160px;
-    font-size: 14px;
     font-weight: 300;
     border: solid;
     border-color: var(--primary-color);
     border-width: 1px;
     border-radius: 4px;
-    padding: 8px 16px;
+    padding: 16px 16px;
     margin-top: 24px;
     transition: all .30s;
     cursor: pointer;
@@ -697,14 +714,15 @@ footer img {
   }
 
   .box {
-    cursor: pointer;
     margin-bottom: 8px;
   }
   
   .box img {
+    cursor: pointer;
     width: 100%;
     height: auto;
-    border-radius: 24px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
     margin-bottom: 8px;
   }
 
@@ -723,13 +741,19 @@ footer img {
     margin-right: 24px;
   }
 
+  button.primary a, button.secondary a{
+    font-size: 16px;
+    font-weight: 400;
+  }
+
   footer {
-    padding: 72px 4%;
+    padding: 24px 4%;
+    padding-top: 32px;
     background-color: var(--secondary-color);
   }
   
   footer img {
-    width: 34%;
+    width: 20%;
   }
 
 }

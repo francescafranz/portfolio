@@ -137,15 +137,17 @@ nav .fa-solid {
 /*FORM*/
 
 h1 {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 p {
   margin-bottom: 48px;
 }
 
+
 form {
-  width: 400px;
+  width: auto;
+  max-width: 800px;
   margin: 0;
   line-height: 1.5;
 }
