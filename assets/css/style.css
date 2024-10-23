@@ -631,7 +631,7 @@ footer img {
   }
 
   p, li {
-    font-size: 16px;
+    font-size: 20px;
     padding-bottom: 24px;
   }
 
@@ -715,14 +715,16 @@ footer img {
 
   .box {
     margin-bottom: 8px;
+    border-radius: 16px;
+    width: 100%;
   }
   
   .box img {
     cursor: pointer;
     width: 100%;
     height: auto;
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
     margin-bottom: 8px;
   }
 
