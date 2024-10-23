@@ -699,7 +699,7 @@ footer img {
   .portfolio-projects {
     margin-top: 16px;
     grid-gap: 40px;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
   }
 
   .portfolio-projects h2 {
