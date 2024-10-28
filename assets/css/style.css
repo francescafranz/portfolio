@@ -474,8 +474,8 @@ button.secondary a {
   height: auto;
   margin-bottom: 16px;
   cursor: pointer;
-  border-top-left-radius: 24px;
-  border-top-right-radius: 24px;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
 }
 
 .box:hover {
@@ -727,8 +727,8 @@ footer img {
   .box img {
     cursor: pointer;
     height: auto;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
     margin-bottom: 8px;
   }
 
