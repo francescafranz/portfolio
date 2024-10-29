@@ -457,7 +457,7 @@ button.secondary a {
 .portfolio-projects {
   margin-top: 56px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 120px;
 }
 
@@ -701,7 +701,7 @@ footer img {
   .portfolio-projects {
     margin-top: 16px;
     grid-gap: 40px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr;
   }
 
   .portfolio-projects h2 {
