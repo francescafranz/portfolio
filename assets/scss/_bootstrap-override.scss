@@ -1,0 +1,110 @@
+@use "./variables" as *;
+@use "./typography";
+
+
+// override bootstrap margins
+.container,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl,
+.container-fluid {
+  padding-inline: 16px !important;
+
+  @media (min-width: 600px) {
+    padding-inline: 32px !important;
+  }
+
+  @media (min-width: 1200px) {
+    padding-inline: 200px !important;
+  }
+
+  @media (min-width: 1600px) {
+    max-width: 1128px !important;
+    margin-inline: auto !important;
+    padding-inline: 0 !important;
+  }
+}
+
+//menu hamburger
+
+.navbar-toggler,
+.navbar-toggler:focus, 
+.navbar-toggler:active, 
+.navbar-toggler-icon:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(163,121,189)' stroke-width='4' stroke-linecap='round' d='M4 5h22M4 15h22M4 25h22'/%3E%3C/svg%3E");
+}
+
+#offcanvasNavbar {
+  padding-top: 16px;
+}
+
+#offcanvasNavbar button {
+  width: 48px;
+  height: auto;
+}
+
+// buttons
+.btn {
+  font-family: var(--font-roboto);
+  font-weight: var(--fw-semi-bold);
+  font-size: clamp(16px, 1.8vw, 20px);
+  &:hover {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+  }
+}
+
+.btn-primary {
+  color: var(--color-white);
+  background-color: var(--color-black);
+  border-color: var(--color-black);
+  border-width: 2px;
+
+  @media (min-width: 1200px) {
+    border-width: 4px;
+  }
+}
+
+.btn-secondary {
+  color: var(--color-black);
+  background-color: var(--color-white);
+  border-color: var(--color-black);
+  border-width: 2px;
+
+  &:hover {
+    color: var(--color-accent);
+    background-color: var(--color-white);
+  }
+
+  @media (min-width: 1200px) {
+    border-width: 4px;
+  }
+}
+
+// navbar
+.nav-link {
+  font-family: var(--font-roboto);
+  font-weight: var(--fw-regular);
+  font-size: clamp(16px, 1.8vw, 20px);
+}
+
+.navbar {
+  --bs-navbar-bg: var(--color-white);
+  --bs-navbar-color: var(--color-black);
+  --bs-navbar-hover-color: var(--color-accent);
+  --bs-navbar-active-color: var(--color-accent); 
+  background-color: var(--bs-navbar-bg) !important;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    position: inherit;
+}

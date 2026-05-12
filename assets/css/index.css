@@ -1,0 +1,73 @@
+.availability.text {
+  padding-top: clamp(96px, 8vw, 144px);
+}
+
+.name {
+  padding-top: clamp(16px, 2vw, 32px);
+  padding-bottom: clamp(32px, 5vw, 80px);
+}
+
+.focus-phrase {
+  padding-block: 48px;
+}
+
+.focus-phrase h3 {
+  padding-bottom: 16px;
+}
+
+.carousel {
+  padding-bottom: 48px;
+  margin-bottom: clamp(96px, 8.57vw + 68.57px, 192px);
+}
+
+.hero-cta {
+  padding-bottom: clamp(80px, 5vw, 96px);
+}
+
+.tags-container {
+  padding-top: clamp(48px, 8.57vw + 20.57px, 144px);
+  padding-bottom: clamp(48px, 8.57vw + 20.57px, 144px);
+}
+
+#my-skills, #my-passions {
+  padding-bottom: 0;
+}
+
+#my-tools {
+  background-color: var(--color-white);
+}
+
+#my-keywords {
+  background-color: var(--color-black);
+}
+
+#my-skills .tags-text, #my-keywords .tags-text {
+  color: var(--color-white);
+}
+
+#my-path h2 {
+  color: var(--color-white);
+}
+
+#my-tools .container,
+#my-keywords .container {
+  width: 100vw; /* Forza la larghezza del viewport */
+  position: relative;
+}
+
+#path-timeline {
+  padding-bottom: clamp(96px, 6.67vw + 74.67px, 192px);
+}
+
+.path-title {
+  padding-bottom: clamp(32px, 1.11vw + 28.44px, 48px);
+}
+
+.path-item {
+  margin-bottom: clamp(32px, 1.11vw + 28.44px, 48px);
+}
+
+.arrow {
+  margin-bottom: clamp(32px, 1.11vw + 28.44px, 48px);
+  font-size: clamp(24px, 2.78vw + 15.11px, 64px);
+}/*# sourceMappingURL=index.css.map */

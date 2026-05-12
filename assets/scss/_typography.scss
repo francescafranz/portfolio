@@ -1,0 +1,116 @@
+@use "sass:map";
+@use "./variables" as *;
+
+:root {
+  // Colors
+  --color-black: #{$black};
+  --color-white: #{$white};
+  --color-accent: #{$accent-color};
+
+  // Font families
+  --font-roboto: #{$roboto};
+  --font-montserrat: #{$montserrat};
+
+  // Font weights
+  --fw-regular: #{map.get($font-weights, "regular")};
+  --fw-medium: #{map.get($font-weights, "medium")};
+  --fw-semi-bold: #{map.get($font-weights, "semi-bold")};
+  --fw-bold: #{map.get($font-weights, "bold")};
+  --fw-extra-bold: #{map.get($font-weights, "extra-bold")};
+
+}
+
+body {
+  line-height: 1.5;
+  color: var(--color-black);
+}
+
+a {
+  font-family: var(--font-roboto);
+  color: var(--color-black);
+  text-decoration: none;
+}
+
+#about-me figure a {
+  font-size: clamp(12px, calc(0.28vw + 11.11px), 16px);
+  text-decoration: underline;
+  color: var(--color-accent);
+
+  &:hover {
+    color: var(--color-black);
+  }
+}
+
+p {
+  font-family: var(--font-montserrat);
+  font-weight: var(--fw-regular);
+  font-size: clamp(14px, 1.5vw, 18px);
+  margin-bottom: clamp(8px, 0.56vw + 6.22px, 16px);
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.2;
+}
+
+
+h1 {
+  font-family: var(--font-montserrat);
+  font-weight: var(--fw-semi-bold);
+  font-size: clamp(52px, 2vw, 72px);
+}
+
+h1 span {
+  color: var(--color-accent);
+  font-style: italic;
+}
+
+h2 {
+  font-family: var(--font-roboto);
+  font-weight: var(--fw-medium);
+  font-size: clamp(24px, 4vw, 40px)
+}
+
+h3 {
+  font-family: var(--font-roboto);
+  font-weight: var(--fw-medium);
+  font-size: clamp(20px, 3vw, 32px);
+}
+
+.availability-status {
+  font-family: var(--font-roboto);
+  font-weight: var(--fw-medium);
+  font-size: clamp(14px, 1.8vw, 20px);
+}
+
+.large-text {
+  font-family: var(--font-montserrat);
+  font-weight: var(--fw-regular);
+  font-size: clamp(16px, 2.5vw, 32px);
+}
+
+.section-title {
+  font-family: var(--font-roboto);
+  font-weight: var(--fw-medium);
+  font-size: clamp(21px, 4vw, 40px);
+}
+
+.tags-title {
+  font-family: var(--font-roboto);
+  color: var(--color-accent);
+  font-weight: var(--fw-medium);
+  font-size: clamp(16px, 1.5vw, 20px);
+}
+
+.tags-text {
+  font-family: var(--font-roboto);
+}
+
+footer h2 {
+  font-size: clamp(28px, 4.5vw, 48px);
+  color: var(--color-white);
+}
+
+footer p {
+  color: var(--color-white);
+  text-align: center;
+}

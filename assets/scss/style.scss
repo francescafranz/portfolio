@@ -1,0 +1,88 @@
+@use "./resets";
+@use "./variables" as *;
+@use "./typography";
+@use "./bootstrap-override";
+@use "./components";
+
+
+header {
+  padding-top: 80px;
+
+}
+
+.navbar {
+  border-bottom: 1px solid var(--color-black);
+  height: clamp(80px, calc(70.857px + 2.857vw), 112px);
+}
+
+.logo-img {
+  height: clamp(48px, 2.86vw + 38.86px, 80px);
+}
+
+body {
+  background-color: var(--color-white);
+
+}
+
+.large-text, #contacts {
+  text-align: center;
+}
+
+section, footer {
+  padding-top: clamp(120px, 4.29vw + 82.5px, 216px);
+  padding-bottom: clamp(96px, 4.29vw + 82.5px, 144px);
+}
+
+.section-title-container {
+  padding-bottom: clamp(72px, 5.54vw + 54.29px, 120px);
+}
+
+.section-title {
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+  
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -0.8em -0.8em;
+    background-image: url('/assets/img/section_title_black.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: -1;
+  }
+}
+
+.dark-section .section-title {
+  &::before {
+    background-image: url('/assets/img/section-title-white-bg.png');
+    }
+  }
+
+.dark-section {
+  background-color: var(--color-black);
+}
+
+footer {
+  background-color: var(--color-black);
+  padding-bottom: clamp(16px, calc(1.11vw + 12.44px), 32px);
+}
+
+footer h2 {
+  padding-bottom: clamp(16px, 1.11vw + 12.44px, 32px);
+}
+
+.footer-text {
+  padding-bottom: clamp(48px, 3.33vw + 37.33px, 96px);
+}
+
+img.icon {
+  width: clamp(48px, 1.11vw + 44.44px, 64px);
+  height: auto;
+}
+
+.copyright {
+  margin-top: clamp(96px, calc(3.47vw + 84.89px), 146px);
+  margin-bottom: clamp(16px, calc(1.11vw + 12.44px), 32px);
+}
