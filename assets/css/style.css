@@ -314,7 +314,7 @@ header {
 }
 
 .logo-img {
-  height: clamp(48px, 2.86vw + 38.86px, 80px);
+  height: clamp(64px, 2.86vw + 38.86px, 112px);
 }
 
 body {
