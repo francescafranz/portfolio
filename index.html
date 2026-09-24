@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="Hi! I am Francesca, a UX/UI Designer and this is my web portfolio.">
+    <meta name="description" content="Hi! I am Francesca, a UX/UI Designer & Aspiring Front-End Developer and this is my web portfolio.">
     <meta name="robots" content="notranslate, noarchive">
     <meta name="keywords" content="Francesca Franz, UX/UI designer, UX, UI, designer, portfolio, web designer">
     <meta name="author" content="Francesca Franz">
@@ -18,7 +18,7 @@
     <meta property="og:image:alt" content="Francesca Franz portfolio website preview">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:description" content="Hi! I am Francesca, a UX/UI Designer and this is my web portfolio.">
+    <meta property="og:description" content="Hi! I am Francesca, a UX/UI Designer & Aspiring Front-End Developer and this is my web portfolio.">
 
     <!--Bootstrap style sheet-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -38,6 +38,7 @@
   </head>
 
   <body>
+    <a class="visually-hidden-focusable" href="#main">Skip to main content</a>
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container">
@@ -52,6 +53,7 @@
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -59,7 +61,7 @@
             class="offcanvas offcanvas-end"
             tabindex="-1"
             id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
+            aria-label="Navigation"
           >
             <div class="offcanvas-header">
               <button
@@ -89,7 +91,7 @@
       </nav>
     </header>
 
-    <main>
+    <main id="main">
       <section id="hero-section">
         <div class="container d-flex justify-content-center align-items-center">
           <div class="hero-text">
@@ -98,6 +100,7 @@
             </div>
             <div class="name">
               <h1>Francesca <span class="highlight">Franz</span></h1>
+              <p class="role">UX/UI Designer & Aspiring Front-End Developer</p>
             </div>
           </div>
         </div>
@@ -117,7 +120,7 @@
 
         <div class="focus-phrase">
           <div class="container d-flex justify-content-center align-items-center">
-          <h3>FOCUS ON PEOPLE</h3>
+          <h2>FOCUS ON PEOPLE</h2>
           </div>
           <div class="container d-flex justify-content-center align-items-center">
           <p class="large-text">Designing accessible digital experiences with empathy and intention.</p>
@@ -133,7 +136,7 @@
           <h2 class="section-title">MY PROJECTS</h2>
         </div>
 
-        <div id="portfolioCarousel" class="carousel slide container d-flex justify-content-center align-items-center" data-bs-ride="carousel">
+        <div id="portfolioCarousel" class="carousel slide container d-flex justify-content-center align-items-center" data-bs-ride="false" role="region" aria-roledescription="carousel" aria-label="My projects">
           <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -143,10 +146,10 @@
 
             <div class="carousel-item active">
               <article class="card">
-                <a href="https://www.behance.net/gallery/172332463/Progetto-grafica-SUNNEE-start2impact" rel="noopener" target="_blank" class="carousel-link">
-                  <img class="card-img-top" src="assets/img/sunnee_cover.png"  alt="Sunnee Graphic Design and Branding">
+                <a href="https://www.behance.net/gallery/172332463/Progetto-grafica-SUNNEE-start2impact" rel="noopener" target="_blank" class="carousel-link" aria-label="SUNNEE project on Behance, opens in a new tab">
+                  <img class="card-img-top" src="assets/img/sunnee_cover.png"  alt="Sunnee logo on dark background">
                   <div class="card-body">
-                    <h4 class="card-title">SUNNEE // Brand Identity </h4>
+                    <h3 class="card-title">SUNNEE // Brand Identity </h3>
                     <p class="card-text">Graphic design project for a fictional brand of sustainable swimsuits.</p>
                   </div>
                 </a>
@@ -154,10 +157,10 @@
             </div>
             <div class="carousel-item">
               <article class="card">
-                <a href="https://www.behance.net/gallery/212442627/Museo-Casa-Giorgione-Course-final-project" rel="noopener" target="_blank" class="carousel-link">
-                  <img class="card-img-top" src="assets/img/copertina_museo_giorgione.png" alt="UX/UI master final project">
+                <a href="https://www.behance.net/gallery/212442627/Museo-Casa-Giorgione-Course-final-project" rel="noopener" target="_blank" class="carousel-link" aria-label="Museo Giorgione UX/UI project on Behance, opens in a new tab">
+                  <img class="card-img-top" src="assets/img/copertina_museo_giorgione.png" alt="Museo Giorgione new logo, and mobile and desktop mockups">
                   <div class="card-body">
-                    <h4 class="card-title">MUSEO GIORGIONE // UX/UI Design</h4>
+                    <h3 class="card-title">MUSEO GIORGIONE // UX/UI Design</h3>
                     <p class="card-text">Final project for UX/UI Design Master in start2impact.</p>
                   </div>
                 </a>
@@ -165,10 +168,10 @@
             </div>
             <div class="carousel-item">
               <article class="card">
-                <a href="https://www.behance.net/gallery/247494623/Personal-project-Homepage-redesign" rel="noopener" target="_blank" class="carousel-link">
-                  <img class="card-img-top" src="assets/img/cover_leucos.png" alt="Landing page redesign. Personal project">
+                <a href="https://www.behance.net/gallery/247494623/Personal-project-Homepage-redesign" rel="noopener" target="_blank" class="carousel-link" aria-label="LEUCOS project on Behance, opens in a new tab">
+                  <img class="card-img-top" src="assets/img/cover_leucos.png" alt="">
                   <div class="card-body">
-                    <h4 class="card-title">LEUCOS // Homepage Redesign </h4>
+                    <h3 class="card-title">LEUCOS // Homepage Redesign </h3>
                     <p class="card-text">Personal project where I experimented with interactions</p>
                   </div>
                 </a>
@@ -199,6 +202,7 @@
             <li><div class="tag"><p class="tags-text">FIGMA</p></div></li>
             <li><div class="tag"><p class="tags-text">GITHUB</p></div></li>
             <li><div class="tag"><p class="tags-text">VSCODE</p></div></li>
+            <li><div class="tag"><p class="tags-text">VITE</p></div></li>
             <li><div class="tag"><p class="tags-text">KEYNOTE</p></div></li>
             <li><div class="tag"><p class="tags-text">MIRO</p></div></li>
           </ul>
@@ -213,6 +217,7 @@
           <ul class="tag-list" role="list">
             <li><div class="tag"><p class="tags-text">HTML5</p></div></li>
             <li><div class="tag"><p class="tags-text">CSS & SCSS</p></div></li>
+            <li><div class="tag"><p class="tags-text">JAVASCRIPT</p></div></li>
             <li><div class="tag"><p class="tags-text">PROTOTYPING</p></div></li>
             <li><div class="tag"><p class="tags-text">ADOBE ILLUSTRATOR & INDESIGN</p></div></li>
             <li><div class="tag"><p class="tags-text">USER RESEARCH</p></div></li>
@@ -316,13 +321,13 @@
         </div>
       </div>
       <div class="container d-flex justify-content-center align-items-center social-icons gap-5">
-        <a href="https://www.linkedin.com/in/francescafranz" rel="noopener" target="_blank"><img src="assets/img/linkedin_icon.png" alt="LinkedIn" class="icon"></a>
+        <a href="https://www.linkedin.com/in/francescafranz" rel="noopener" target="_blank" aria-label="My LinkedIn page, opens in a new tab"><img src="assets/img/linkedin_icon.png" alt="" class="icon"></a>
 
-        <a href="https://github.com/francescafranz" rel="noopener" target="_blank"><img src="assets/img/github_icon.png" alt="GitHub" class="icon"></a>
+        <a href="https://github.com/francescafranz" rel="noopener" target="_blank" aria-label="My GitHub page, opens in a new tab"><img src="assets/img/github_icon.png" alt="" class="icon"></a>
 
-        <a href="https://www.behance.net/francescafranz" rel="noopener" target="_blank"><img src="assets/img/behance_icon.png" alt="Behance" class="icon"></a>
+        <a href="https://www.behance.net/francescafranz" rel="noopener" target="_blank" aria-label="My Behance page, opens in a new tab"><img src="assets/img/behance_icon.png" alt="" class="icon"></a>
 
-        <a href="mailto:francesca.franz.33@gmail.com" rel="noopener" target="_blank"><img src="assets/img/mail_icon.png" alt="Email" class="icon"></a>
+        <a href="mailto:francesca.franz.33@gmail.com" aria-label="Send me an Email"><img src="assets/img/mail_icon.png" alt="" class="icon"></a>
 
       </div>
       <div class="copyright">

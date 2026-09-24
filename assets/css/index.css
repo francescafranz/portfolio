@@ -1,4 +1,4 @@
-.availability.text {
+.availability-text {
   padding-top: clamp(96px, 8vw, 144px);
 }
 
@@ -7,17 +7,26 @@
   padding-bottom: clamp(32px, 5vw, 80px);
 }
 
+.role {
+  font-size: clamp(20px, 3vw, 32px);
+}
+
 .focus-phrase {
   padding-block: 48px;
 }
 
-.focus-phrase h3 {
+.focus-phrase h2 {
   padding-bottom: 16px;
+  font-size: clamp(20px, 3vw, 32px);
 }
 
 .carousel {
   padding-bottom: 48px;
   margin-bottom: clamp(96px, 8.57vw + 68.57px, 192px);
+}
+
+.card-title {
+  font-size: clamp(20px, 3vw, 32px);
 }
 
 .hero-cta {
@@ -35,6 +44,10 @@
 
 #my-tools {
   background-color: var(--color-white);
+}
+
+#my-tools .tags-title, #my-passions .tags-title {
+  color: var(--color-accent-light);
 }
 
 #my-keywords {

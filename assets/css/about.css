@@ -15,7 +15,7 @@ span {
 }
 
 .btn {
-  margin-bottom: 96px, calc(3.33vw + 85.33px), 144px;
+  margin-bottom: clamp(96px, 3.33vw + 85.33px, 144px);
 }
 
 figure {

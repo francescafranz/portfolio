@@ -58,6 +58,7 @@ textarea:not([rows]) {
   --color-black: #110F12;
   --color-white: #FAFBF9;
   --color-accent: #A379BD;
+  --color-accent-light: #905EB0;
   --font-roboto: Roboto Mono, monospace;
   --font-montserrat: Montserrat, sans-serif;
   --fw-regular: 400;
@@ -81,7 +82,7 @@ a {
 #about-me figure a {
   font-size: clamp(12px, 0.28vw + 11.11px, 16px);
   text-decoration: underline;
-  color: var(--color-accent);
+  color: var(--color-accent-light);
 }
 #about-me figure a:hover {
   color: var(--color-black);
@@ -210,9 +211,13 @@ footer p {
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
   border: none;
-  outline: none;
   box-shadow: none;
   padding: 0;
+}
+
+.navbar-toggler:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
 }
 
 .navbar-toggler-icon {
@@ -234,8 +239,8 @@ footer p {
   font-size: clamp(16px, 1.8vw, 20px);
 }
 .btn:hover {
-  background-color: var(--color-accent);
-  border-color: var(--color-accent);
+  background-color: var(--color-accent-light);
+  border-color: var(--color-accent-light);
 }
 
 .btn-primary {
@@ -257,7 +262,7 @@ footer p {
   border-width: 2px;
 }
 .btn-secondary:hover {
-  color: var(--color-accent);
+  color: var(--color-accent-light);
   background-color: var(--color-white);
 }
 @media (min-width: 1200px) {
@@ -275,8 +280,8 @@ footer p {
 .navbar {
   --bs-navbar-bg: var(--color-white);
   --bs-navbar-color: var(--color-black);
-  --bs-navbar-hover-color: var(--color-accent);
-  --bs-navbar-active-color: var(--color-accent);
+  --bs-navbar-hover-color: var(--color-accent-light);
+  --bs-navbar-active-color: var(--color-accent-light);
   background-color: var(--bs-navbar-bg) !important;
 }
 

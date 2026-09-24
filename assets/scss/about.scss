@@ -1,3 +1,5 @@
+
+
 h1 {
   color: var(--color-white);
 }
@@ -15,7 +17,7 @@ span {
 }
 
 .btn {
-  margin-bottom: (96px, calc(3.33vw + 85.33px), 144px);
+  margin-bottom: clamp(96px, calc(3.33vw + 85.33px), 144px);
 }
 
 figure {
