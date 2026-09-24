@@ -47,18 +47,18 @@ section, footer {
     content: '';
     position: absolute;
     inset: -0.8em -0.8em;
-    background-image: url('../img/section_title_black.svg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    // background-image: url('../img/section_title_black.svg');
+    // background-repeat: no-repeat;
+    // background-size: 100% 100%;
     z-index: -1;
   }
 }
 
-.dark-section .section-title {
-  &::before {
-    background-image: url('../img/section-title-white-bg.png');
-    }
-  }
+// .dark-section .section-title {
+//   &::before {
+//     background-image: url('../img/section-title-white-bg.png');
+//     }
+//   }
 
 .dark-section {
   background-color: var(--color-black);
