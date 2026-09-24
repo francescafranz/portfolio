@@ -326,7 +326,7 @@ body {
 }
 
 section, footer {
-  padding-top: clamp(120px, 4.29vw + 82.5px, 216px);
+  padding-top: clamp(72px, 4.29vw + 82.5px, 216px);
   padding-bottom: clamp(96px, 4.29vw + 82.5px, 144px);
 }
 
@@ -343,14 +343,14 @@ section, footer {
   content: "";
   position: absolute;
   inset: -0.8em -0.8em;
-  background-image: url("/assets/img/section_title_black.svg");
+  background-image: url("../img/section_title_black.svg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   z-index: -1;
 }
 
 .dark-section .section-title::before {
-  background-image: url("/assets/img/section-title-white-bg.png");
+  background-image: url("../img/section-title-white-bg.png");
 }
 
 .dark-section {

@@ -1,5 +1,5 @@
 .availability-text {
-  padding-top: clamp(96px, 8vw, 144px);
+  padding-top: clamp(40px, 8vw, 144px);
 }
 
 .name {
